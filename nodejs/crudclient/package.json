@@ -1,0 +1,17 @@
+{
+  "name": "crudclient",
+  "version": "1.0.0",
+  "description": "crud client for axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "axios"
+  ],
+  "author": "abhishek",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
