@@ -9,8 +9,9 @@ exports.getAll=(req,res)=>{
 
 exports.create = (req,res)=>{
     var product = req.body;
+    console.log("Before Dao")
     dao.create(product,(err,product)=>{
-        console.log("Inserted")
+        console.log("After Dao")
         if(err) console.log(err);
         res.send(product);
     })

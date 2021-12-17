@@ -7,7 +7,9 @@ productSchema.statics={
     },
     create: function(data,cb){
         var product=this(data);
-        product.save();
+        console.log("in dao: bs")
+        product.save(cb);
+        console.log("in dao: as")
     },
     update: function(query,update,cb){
         this.findOneAndUpdate(query,{$set:updateData},cb);
