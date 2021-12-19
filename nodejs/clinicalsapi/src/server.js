@@ -3,11 +3,14 @@ import props from './config/properties'
 import db from './config/db'
 import bodyPraser from 'body-parser'
 import clinicalRoutes from './routes'
+import cors from 'cors'
 
 db()
 var app=express()
 app.use(bodyPraser.urlencoded({extended:true}))
 app.use(bodyPraser.json())
+
+app.use(cors())
 
 var clinicalRouter=express.Router()
 clinicalRoutes(clinicalRouter)
